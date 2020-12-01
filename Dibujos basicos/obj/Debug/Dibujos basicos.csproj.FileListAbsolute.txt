@@ -1,0 +1,9 @@
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\bin\Debug\Dibujos basicos.exe
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\bin\Debug\Dibujos basicos.pdb
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\obj\Debug\Dibujos basicos.csprojAssemblyReference.cache
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\obj\Debug\Dibujos_basicos.FrmPrincipal.resources
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\obj\Debug\Dibujos_basicos.Properties.Resources.resources
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\obj\Debug\Dibujos basicos.csproj.GenerateResource.cache
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\obj\Debug\Dibujos basicos.csproj.CoreCompileInputs.cache
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\obj\Debug\Dibujos basicos.exe
+D:\C#\WinForms\Graficos\Dibujos basicos\Dibujos basicos\obj\Debug\Dibujos basicos.pdb
