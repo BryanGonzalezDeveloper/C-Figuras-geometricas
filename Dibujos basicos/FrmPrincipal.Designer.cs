@@ -42,15 +42,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnLimpiar = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pbZonaDibujo)).BeginInit();
             this.pnlContenedor.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // pbZonaDibujo
             // 
-            this.pbZonaDibujo.Location = new System.Drawing.Point(27, 38);
+            this.pbZonaDibujo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbZonaDibujo.Location = new System.Drawing.Point(0, 0);
             this.pbZonaDibujo.Name = "pbZonaDibujo";
-            this.pbZonaDibujo.Size = new System.Drawing.Size(329, 362);
+            this.pbZonaDibujo.Size = new System.Drawing.Size(418, 371);
             this.pbZonaDibujo.TabIndex = 0;
             this.pbZonaDibujo.TabStop = false;
             // 
@@ -69,6 +76,7 @@
             this.btnLinea.TabIndex = 1;
             this.btnLinea.Text = "LINEA";
             this.btnLinea.UseVisualStyleBackColor = true;
+            this.btnLinea.Click += new System.EventHandler(this.btnLinea_Click);
             // 
             // pnlContenedor
             // 
@@ -82,7 +90,7 @@
             this.pnlContenedor.Controls.Add(this.btnCirculo);
             this.pnlContenedor.Controls.Add(this.panel1);
             this.pnlContenedor.Controls.Add(this.btnLinea);
-            this.pnlContenedor.Location = new System.Drawing.Point(376, 66);
+            this.pnlContenedor.Location = new System.Drawing.Point(478, 50);
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(226, 190);
             this.pnlContenedor.TabIndex = 2;
@@ -112,6 +120,7 @@
             this.btnElipse.TabIndex = 9;
             this.btnElipse.Text = "ELIPSE";
             this.btnElipse.UseVisualStyleBackColor = true;
+            this.btnElipse.Click += new System.EventHandler(this.btnElipse_Click);
             // 
             // panel4
             // 
@@ -138,6 +147,7 @@
             this.btnCuadrado.TabIndex = 7;
             this.btnCuadrado.Text = "CUADRADO";
             this.btnCuadrado.UseVisualStyleBackColor = true;
+            this.btnCuadrado.Click += new System.EventHandler(this.btnCuadrado_Click);
             // 
             // panel3
             // 
@@ -164,6 +174,7 @@
             this.btnTriangulo.TabIndex = 5;
             this.btnTriangulo.Text = "TRIANGULO";
             this.btnTriangulo.UseVisualStyleBackColor = true;
+            this.btnTriangulo.Click += new System.EventHandler(this.btnTriangulo_Click);
             // 
             // panel2
             // 
@@ -190,6 +201,7 @@
             this.btnCirculo.TabIndex = 3;
             this.btnCirculo.Text = "CIRCULO";
             this.btnCirculo.UseVisualStyleBackColor = true;
+            this.btnCirculo.Click += new System.EventHandler(this.btnCirculo_Click);
             // 
             // panel1
             // 
@@ -206,7 +218,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Swis721 Blk BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(63)))), ((int)(((byte)(95)))));
-            this.label1.Location = new System.Drawing.Point(439, 38);
+            this.label1.Location = new System.Drawing.Point(541, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 19);
             this.label1.TabIndex = 3;
@@ -221,12 +233,61 @@
             this.btnLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Swis721 Blk BT", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiar.Location = new System.Drawing.Point(416, 292);
+            this.btnLimpiar.Location = new System.Drawing.Point(526, 349);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(141, 34);
             this.btnLimpiar.TabIndex = 4;
             this.btnLimpiar.Text = "LIMPIAR";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.panel9);
+            this.panel6.Controls.Add(this.panel10);
+            this.panel6.Controls.Add(this.panel8);
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.pbZonaDibujo);
+            this.panel6.Location = new System.Drawing.Point(12, 12);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(418, 371);
+            this.panel6.TabIndex = 5;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(120)))), ((int)(((byte)(167)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel9.Location = new System.Drawing.Point(10, 361);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(398, 10);
+            this.panel9.TabIndex = 7;
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(120)))), ((int)(((byte)(167)))));
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(10, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(398, 10);
+            this.panel10.TabIndex = 7;
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(120)))), ((int)(((byte)(167)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 371);
+            this.panel8.TabIndex = 7;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(120)))), ((int)(((byte)(167)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(408, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(10, 371);
+            this.panel7.TabIndex = 6;
             // 
             // FrmPrincipal
             // 
@@ -234,14 +295,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pnlContenedor);
-            this.Controls.Add(this.pbZonaDibujo);
             this.Name = "FrmPrincipal";
-            this.Text = "Form1";
+            this.Text = "DIBUJOS ALEATORIOS DE FIGURAS";
             ((System.ComponentModel.ISupportInitialize)(this.pbZonaDibujo)).EndInit();
             this.pnlContenedor.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,6 +325,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLimpiar;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel7;
     }
 }
 
